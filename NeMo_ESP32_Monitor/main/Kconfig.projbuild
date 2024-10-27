@@ -1,0 +1,27 @@
+menu "Neutron Monitor ESP32"
+
+    config WIFI_SSID
+        string "SSID"
+        default "WifiName"
+
+    config WIFI_PASSWORD
+        string "PASSWORD"
+        default "Password"
+
+    config MQTT_HOST
+        string "BROKER"
+        default "broker ip"
+        
+    config MQTT_PORT
+        string "1883"
+        default "1883"
+
+    config OTA_HOST
+        string "OTA bin file URL"
+        default ""
+
+    config OTA_HASH
+        string "OTA hash file URL"
+        default ""
+        
+endmenu
